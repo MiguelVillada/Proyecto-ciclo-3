@@ -2,3 +2,5 @@
 
 Integrantes:
 - Oscar Ivan Mimalchi T.
+- Miguel Angel Villada Saavedra.
+
