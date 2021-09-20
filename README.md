@@ -1,4 +1,7 @@
 # Proyecto-ciclo-3
 
 Integrantes:
--Aleida Rodriguez
+- Oscar Ivan Mimalchi T.
+- Miguel Angel Villada Saavedra.
+- Aleida Rodriguez
+
