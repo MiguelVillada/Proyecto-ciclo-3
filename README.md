@@ -6,5 +6,6 @@ Integrantes:
 - Miguel Angel Villada Saavedra.
 - Aleida Rodriguez.
 - Juan Andres Godoy Reyes.
+- Natalia Hernandez Dimate.
 
 
