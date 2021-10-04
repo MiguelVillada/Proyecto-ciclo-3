@@ -1,0 +1,125 @@
+.Head {
+  background: #2b78e4;
+  padding-left: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7fr  1fr;
+      grid-template-columns: 7fr  1fr;
+  border-bottom-style: solid;
+  border-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.Head div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.Head div img {
+  padding-top: 10px;
+}
+
+.Head div:hover {
+  background: #005ce6;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #9fc5f8;
+}
+
+.Menu {
+  margin: 0px;
+  margin-top: 0px;
+  padding-left: 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 7fr;
+      grid-template-columns: 2fr 7fr;
+}
+
+.Menu .Izquierdo {
+  padding-left: 0px;
+  padding-top: 0px;
+  list-style: none;
+  margin-top: 0px;
+  background-color: #7cb2f8;
+  margin-bottom: 0%;
+}
+
+.Menu .Izquierdo a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Menu .Izquierdo li {
+  margin: 0px;
+  padding: 15px;
+  background: #ff944d;
+  border-right: 5px;
+  border-style: outset;
+  border-color: #383434;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Menu .Izquierdo li:hover {
+  background: #ffd1b3;
+}
+
+.Menu .Derecho {
+  list-style: none;
+  background: whitesmoke;
+  margin: 3%;
+  border-radius: 8px;
+}
+
+.Menu .Derecho li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 3fr;
+      grid-template-columns: 3fr 3fr;
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Menu .Derecho li label {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 15px;
+}
+
+.Menu .Derecho li label input {
+  margin-right: 20%;
+  border-radius: 5px;
+  margin-top: 0px;
+  padding: 2%;
+  border-style: groove;
+}
+
+.Menu .Derecho li label #Venta, .Menu .Derecho li label #Valor, .Menu .Derecho li label #Precio {
+  background: #cccccc;
+}
+
+.Menu .Derecho li button {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 2%;
+  background: #38761d;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.Menu .Derecho li button:hover {
+  background: #6aa84f;
+}
+/*# sourceMappingURL=EstRegVen.css.map */
