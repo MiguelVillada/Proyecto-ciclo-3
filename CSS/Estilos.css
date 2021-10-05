@@ -96,22 +96,29 @@ body {
 }
 
 .Info input[type="submit"] {
-  background-color: #ff944d;
+  background-color: #246355;
   width: 100px;
   padding: 8px;
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
+  color: aliceblue;
+  
+}
+
+.Info input[type="button"] {
+  background-color: #246355;
+  width: 160px;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: aliceblue;
+  margin-top: 2%;
+  margin-left: 32%;
+  
 }
 
 .Info input[type="submit"]:hover {
   background-color: #ffd1b3;
 }
 
-.Info .table {
-  border-color: tomato;
-  background-color: #e4e4e4;
-  border-radius: 20px;
-  padding: 10px;
-  width: 90%;
-}
-/*# sourceMappingURL=Estilos.css.map */
+/*# sourceMappingURL=EstInfoVentas.css.map */
