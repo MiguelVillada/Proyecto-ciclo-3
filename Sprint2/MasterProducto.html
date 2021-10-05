@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Estilos.css">
+    <title>Editar Producto</title>
+
+    <!------------------------------------------------------------------------>
+    <style type="text/css">
+   
+        form{
+              background-color: white;
+              border-radius: 3px;
+              color: rgb(7, 7, 7);
+              font-size: 1em;
+              padding: 10px;
+              margin: 0 auto;
+              width: 450px;
+              
+          }
+  
+          input, textarea, select{
+              border: 1;
+              outline: none;
+              width: 280px;
+              
+          }
+  
+          .field{
+              border: solid 1px rgba(94, 92, 92, 0.747);
+              padding: 5px;
+  
+              
+          }
+  
+          .field:focus{
+              border-color: #18A383;
+          }
+  
+          .center-content{
+              text-align: center;
+          }
+  
+          .boton{
+          font-size:15px;
+          font-family:Verdana,Helvetica;
+          font-weight:bold;
+          color:white;
+          background:#237021;
+          border:0px;
+          width:100px;
+          height:30px;
+          border-radius: 10px;
+         }
+         .texto{
+          font-size:15px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight:bold;
+          color:rgb(12, 11, 11);
+          
+         }
+  
+       
+         </style
+      <!------------------------------------------------------------------------>
+    <div class="Head">
+        <p>Nombre de la empresa</p>
+        <div>
+            <p>Nombre Usuario</p>
+            <img src="user_icon-icons.com_66546.png">
+        </div>    
+    </div>
+    
+</head>
+<body>
+    <div class="contenedor">
+        <div class="Menu">
+            <ul>
+                <a href="#InformacionVentas" ><li>Información de ventas</li></a>
+                <a href="#RegistrarVenta" ><li>Registrar venta</li></a>
+                <a href="#RegistrarProducto" ><li>Registrar un producto</li></a>
+                <a href="#ListarProducto" ><li>Listar producto</li></a>
+                <a href="#VerUsuarios" ><li>Ver usuarios</li></a>
+            </ul>
+        </div>
+        <div>
+           
+        <!------------------------------------------------------------------------------------->
+         <center><h2>Editar un producto</h2></center>
+         <form action="">
+          <table>
+            <tr><td><label class="texto">Identificador:</label></td>
+            <td><input type="text" class="field" disabled></td></tr>
+            
+            <tr><td><br><label class="texto">Descripción:</label></td>
+            <td><br><textarea class="field" rows=10></textarea></td></tr>
+
+            <tr><td><br><label class="texto">Estado:</label></td>
+            <td><br><select name="" class="field">
+                <option value="" selected>Disponible
+                <option value="">No disponible
+            </select>
+                </td></tr>
+
+            <tr><td><br><labe class="texto"l>Valor:</label></td>
+            <td><br><input type="text" class="field"></td></tr>
+
+            <tr><td></td>
+            <td><br><center><input type="submit" value="Validar" class="boton"></center></td></tr>
+            </table>		
+		
+	</form>
+
+         <!------------------------------------------------------------------------------------->
+        </div>
+    </div>
+
+
+</body>
+</html>
