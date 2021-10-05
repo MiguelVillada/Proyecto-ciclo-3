@@ -1,0 +1,137 @@
+.Head {
+  background: #2b78e4;
+  padding-left: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7fr  1fr;
+      grid-template-columns: 7fr  1fr;
+  border-bottom-style: solid;
+  border-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.Head div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.Head div img {
+  padding-top: 10px;
+}
+
+.Head div:hover {
+  background: #005ce6;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #9fc5f8;
+}
+
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.Menu {
+  margin: 0px;
+  margin-top: 0px;
+  padding-left: 0px;
+  background-color: #7cb2f8;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  grid-row: 1/7;
+}
+
+.Menu ul {
+  padding-left: 0px;
+  padding-top: 0px;
+  list-style: none;
+  margin-top: 0px;
+}
+
+.Menu ul a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Menu ul li {
+  margin: 0px;
+  padding: 15px;
+  background: #ff944d;
+  border-right: 5px;
+  border-style: outset;
+  border-color: #383434;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Menu ul li:hover {
+  background: #ffd1b3;
+}
+
+.Info {
+  margin: 0px;
+  margin-top: 0px;
+  padding-left: 30px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  grid-row: 1/6;
+}
+
+.Info input[type="search"] {
+  background-color: #e4e4e4;
+  width: 300px;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.Info input[type="submit"] {
+  background-color: #246355;
+  color: #fcfcfc;
+  width: 100px;
+  padding: 8px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.Info input[type="submit"]:hover {
+  background-color: #0F362D;
+}
+
+.tabla {
+  padding-top: 20px;
+  background-color: #e4e4e4;
+  text-align: left;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.tabla td, .tabla th {
+  padding: 16px;
+}
+
+.tabla thead {
+  background-color: #246355;
+  border-bottom: solid 5px #0F362D;
+  color: white;
+}
+
+.tabla tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+.tabla tr:hover td {
+  background-color: #369681;
+  color: white;
+}
+/*# sourceMappingURL=EstInfoVentas.css.map */
