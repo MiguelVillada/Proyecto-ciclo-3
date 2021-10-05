@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/EstRegPro.css">
-    <title>Inicio</title>
+    <title>Registro de producto</title>
+</head>    
+<body>
     <div class="Head">
         <p>Nombre de la empresa</p>
         <div>
@@ -13,47 +15,49 @@
             <img src="user_icon-icons.com_66546.png">
         </div>    
     </div>
-    <div class="Menu">
-        <ul class="izquierdo">
-            <a href="InfoVentas.html" ><li>Información de ventas</li></a>
-            <a href="#RegistrarVenta" ><li>Registrar venta</li></a>
-            <a href="RegPro.html" ><li>Registrar un producto</li></a>
-            <a href="#ListarProducto" ><li>Listar producto</li></a>
-            <a href="#VerUsuarios" ><li>Ver usuarios</li></a>
-        </ul>
-        <ul class="Registro">
-            <h2>Registro de producto</h2>
-            <li>
-                <label for="id producto">Id producto:
-                    <input type="number" id="producto" name="id producto" readonly>
-                </label>
-                <label class="botones">
-                    <label for="contactChoice1"><input type="radio" id="contactChoice1"
-                    name="opcion" value="Disponible">
-                    Disponible</label>
-                    <label for="contactChoice2"><input type="radio" id="contactChoice2"
-                    name="opcion" value="No disponible">
-                    No disponible</label>
-                </label>
+  
+    <div class="contenedor">
+        <div class="Menu">
+            <ul class="izquierdo">
+                <a href="InfoVentas.html" ><li>Información de ventas</li></a>
+                <a href="RegVen.html" ><li>Registrar venta</li></a>
+                <a href="RegPro.html" ><li>Registrar un producto</li></a>
+                <a href="ListaProductos.html" ><li>Listar producto</li></a>
+                <a href="VerUsuarios.html" ><li>Ver usuarios</li></a>
+            </ul>
+        </div>    
+            <ul class="Registro">
+                <h3>Registro de producto</h3>
+                <li>
+                    <label for="id producto">Id producto:
+                        <input type="number" id="producto" name="id producto" readonly>
+                    </label>
+                    <label class="botones">
+                        <label for="contactChoice1"><input type="radio" id="contactChoice1"
+                        name="opcion" value="Disponible">
+                        Disponible</label>
+                        <label for="contactChoice2"><input type="radio" id="contactChoice2"
+                        name="opcion" value="No disponible">
+                        No disponible</label>
+                    </label>
 
-            </li>
-            <li>
-                <label for="valor unitario">Valor unitario:
-                    <input type="number" id="valor" name="valor unitario">
-                </label>
-                <label for="descripcion">Descripción del producto:
+                </li>
+                <li>
+                    <label for="valor unitario">Valor unitario:
+                        <input type="number" id="valor" name="valor unitario">
+                    </label>
+                    <label for="descripcion">Descripción del producto:
+                        
+                    </label>
                     
-                </label>
-                
-            </li>
-            <li>
-                <button>Registrar producto</button>
-                <textarea name="descripcion" rows="10" cols="45" placeholder="Añade una descripción"></textarea>
-            </li>
-        </ul>
+                </li>
+                <li>
+                    <button>Registrar producto</button>
+                    <textarea name="descripcion" rows="10" cols="45" placeholder="Añade una descripción"></textarea>
+                </li>
+            </ul>
     </div>
-</head>
-<body>
+
     
 </body>
 </html>

@@ -46,32 +46,26 @@ body {
   margin: 0px;
   margin-top: 0px;
   padding-left: 0px;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  grid-row: 1/4;
   background-color: #7cb2f8;
-}
-
-.Menu .Izquierdo {
-  padding-left: 0px;
-  padding-top: 0px;
-  list-style: none;
-  margin-top: 0px;
-  background: #7cb2f8;
-  padding-bottom: 0%;
-  margin-bottom: 0%;
   -ms-grid-row: 1;
   -ms-grid-row-span: 6;
   grid-row: 1/7;
 }
 
-.Menu .Izquierdo a {
+.Menu ul {
+  padding-left: 0px;
+  padding-top: 0px;
+  list-style: none;
+  margin-top: 0px;
+}
+
+.Menu ul a {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
 
-.Menu .Izquierdo li {
+.Menu ul li {
   margin: 0px;
   padding: 15px;
   background: #ff944d;
@@ -81,57 +75,43 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.Menu .Izquierdo li:hover {
+.Menu ul li:hover {
   background: #ffd1b3;
 }
 
-.Derecho {
-  list-style: none;
-  background: whitesmoke;
-  margin: 3%;
-  border-radius: 8px;
-}
-
-.Derecho li {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 3fr 3fr;
-      grid-template-columns: 3fr 3fr;
-  padding: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.Derecho li label {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  margin: 15px;
-}
-
-.Derecho li label input {
-  margin-right: 20%;
-  border-radius: 5px;
+.Info {
+  margin: 0px;
   margin-top: 0px;
-  padding: 2%;
-  border-style: groove;
+  padding-left: 30px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  grid-row: 1/6;
 }
 
-.Derecho li label #Venta, .Derecho li label #Valor, .Derecho li label #Precio {
-  background: #cccccc;
+.Info input[type="search"] {
+  background-color: #e4e4e4;
+  width: 300px;
+  padding: 8px;
+  border-radius: 20px;
 }
 
-.Derecho li button {
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 2%;
-  background: #38761d;
-  border-radius: 5px;
-  color: white;
+.Info input[type="submit"] {
+  background-color: #ff944d;
+  width: 100px;
+  padding: 8px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
-.Derecho li button:hover {
-  background: #6aa84f;
+.Info input[type="submit"]:hover {
+  background-color: #ffd1b3;
 }
-/*# sourceMappingURL=EstRegVen.css.map */
+
+.Info .table {
+  border-color: tomato;
+  background-color: #e4e4e4;
+  border-radius: 20px;
+  padding: 10px;
+  width: 90%;
+}
+/*# sourceMappingURL=Estilos.css.map */

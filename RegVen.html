@@ -15,55 +15,57 @@
             <img src="user_icon-icons.com_66546.png">
         </div>    
     </div>
-    <div class="Menu">
-        <ul class="Izquierdo">
-            <a href="#InformacionVentas" ><li>Información de ventas</li></a>
-            <a href="#RegistrarVenta" ><li>Registrar venta</li></a>
-            <a href="#RegistrarProducto" ><li>Registrar un producto</li></a>
-            <a href="#ListarProducto" ><li>Listar producto</li></a>
-            <a href="#VerUsuarios" ><li>Ver usuarios</li></a>
-        </ul>
-        <ul class="Derecho">
-            <h3>Registro de ventas</h3>
-            <li>
-                <label for="Id Venta">Identificador de venta:
-                <input type="number"   id="Venta" name="Id Venta" readonly placeholder="123456789">
-                </label>
-                <label for="Fecha">Fecha:
-                <input type="datetime-local" id="Fecha" name="Fecha" >
-                </label>
-            </li>
-            <li>
-                <label for="Id Producto">Id producto:
-                <input type="number" id="Id Producto" name="Id Producto"  >
-                </label>
-                <label for="Cliente">Cliente:
-                <input type="text" id="Cliente" name="Cliente"  >
-                </label>
-            </li>
-            <li>
-                <label for="Valor Total">Valor total: $
-                <input type="number" id="Valor" name="Valor Total" readonly >
-                </label>
-                <label for="Documento">N° Documento:
-                <input type="number" id="Documento" name="Documento"  >
-                </label>
-            </li>
-            <li>
-                <label for="Cantidad">Cantidad:
-                <input type="number" id="Cantidad" name="Cantidad"  >
-                </label>
-                <label for="Vendedor">Vendedor:
-                <input type="text"  id="Vendedor" name="Vendedor" autocomplete="name" >
-                </label>
-            </li>
-            <li>
-                <label for="Precio">Precio: $
-                <input type="number" id="Precio" name="Precio" readonly >
-                </label>
-                <button>Registrar venta</button>
-            </li>
-        </ul>
-    </div>
+    <div class="contenedor">
+        <div class="Menu">
+            <ul class="Izquierdo">
+                <a href="InfoVentas.html" ><li>Información de ventas</li></a>
+                <a href="RegVen.html" ><li>Registrar venta</li></a>
+                <a href="RegPro.html" ><li>Registrar un producto</li></a>
+                <a href="ListaProductos.html" ><li>Listar producto</li></a>
+                <a href="VerUsuarios.html" ><li>Ver usuarios</li></a>
+            </ul>
+        </div>    
+            <ul class="Derecho">
+                <h3>Registro de ventas</h3>
+                <li>
+                    <label for="Id Venta">Identificador de venta:
+                    <input type="number"   id="Venta" name="Id Venta" readonly placeholder="123456789">
+                    </label>
+                    <label for="Fecha">Fecha:
+                    <input type="datetime-local" id="Fecha" name="Fecha" >
+                    </label>
+                </li>
+                <li>
+                    <label for="Id Producto">Id producto:
+                    <input type="number" id="Id Producto" name="Id Producto"  >
+                    </label>
+                    <label for="Cliente">Cliente:
+                    <input type="text" id="Cliente" name="Cliente"  >
+                    </label>
+                </li>
+                <li>
+                    <label for="Valor Total">Valor total: $
+                    <input type="number" id="Valor" name="Valor Total" readonly >
+                    </label>
+                    <label for="Documento">N° Documento:
+                    <input type="number" id="Documento" name="Documento"  >
+                    </label>
+                </li>
+                <li>
+                    <label for="Cantidad">Cantidad:
+                    <input type="number" id="Cantidad" name="Cantidad"  >
+                    </label>
+                    <label for="Vendedor">Vendedor:
+                    <input type="text"  id="Vendedor" name="Vendedor" autocomplete="name" >
+                    </label>
+                </li>
+                <li>
+                    <label for="Precio">Precio: $
+                    <input type="number" id="Precio" name="Precio" readonly >
+                    </label>
+                    <button>Registrar venta</button>
+                </li>
+            </ul>
+        </div>            
 </body>
 </html>

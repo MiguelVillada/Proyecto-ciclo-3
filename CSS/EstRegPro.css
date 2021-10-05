@@ -34,14 +34,22 @@ body {
   background: #9fc5f8;
 }
 
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  grid-auto-rows: minmax(100px, auto);
+}
+
 .Menu {
   margin: 0px;
   margin-top: 0px;
   padding-left: 0px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 7fr;
-      grid-template-columns: 2fr 7fr;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  background-color: #7cb2f8;
 }
 
 .Menu .izquierdo {
@@ -52,6 +60,9 @@ body {
   background: #7cb2f8;
   padding-bottom: 0%;
   margin-bottom: 0%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  grid-row: 1/7;
 }
 
 .Menu .izquierdo a {
@@ -74,14 +85,14 @@ body {
   background: #ffd1b3;
 }
 
-.Menu .Registro {
+.Registro {
   list-style: none;
   background-color: whitesmoke;
   margin: 3%;
   border-radius: 8px;
 }
 
-.Menu .Registro li {
+.Registro li {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 3fr 3fr;
@@ -89,7 +100,7 @@ body {
   margin: 2%;
 }
 
-.Menu .Registro li label {
+.Registro li label {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -99,32 +110,32 @@ body {
   padding-right: 2%;
 }
 
-.Menu .Registro li label input {
+.Registro li label input {
   border-radius: 8px;
 }
 
-.Menu .Registro li label #producto {
+.Registro li label #producto {
   margin-bottom: 15%;
   background-color: #dddddd;
 }
 
-.Menu .Registro li label #valor {
+.Registro li label #valor {
   padding-top: 1.7%;
   padding-bottom: 1.7%;
 }
 
-.Menu .Registro li .botones {
+.Registro li .botones {
   display: block;
 }
 
-.Menu .Registro li .botones label {
+.Registro li .botones label {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 7fr;
       grid-template-columns: 1fr 7fr;
 }
 
-.Menu .Registro li button {
+.Registro li button {
   background-color: #38761d;
   color: white;
   margin: 12%;
@@ -133,12 +144,12 @@ body {
   border-radius: 8px;
 }
 
-.Menu .Registro li button:hover {
+.Registro li button:hover {
   background-color: yellowgreen;
   cursor: pointer;
 }
 
-.Menu .Registro li textarea {
+.Registro li textarea {
   border-radius: 8px;
   margin-right: 5%;
   margin-left: 4%;

@@ -34,30 +34,44 @@ body {
   background: #9fc5f8;
 }
 
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  grid-auto-rows: minmax(100px, auto);
+}
+
 .Menu {
   margin: 0px;
   margin-top: 0px;
   padding-left: 0px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 7fr;
-      grid-template-columns: 2fr 7fr;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1/8;
+  background-color: #7cb2f8;
 }
 
-.Menu ul {
+.Menu .Izquierdo {
   padding-left: 0px;
   padding-top: 0px;
   list-style: none;
   margin-top: 0px;
+  background: #7cb2f8;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  grid-row: 1/7;
 }
 
-.Menu ul a {
+.Menu .Izquierdo a {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
 
-.Menu ul li {
+.Menu .Izquierdo li {
   margin: 0px;
   padding: 15px;
   background: #ff944d;
@@ -67,7 +81,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.Menu ul li:hover {
+.Menu .Izquierdo li:hover {
   background: #ffd1b3;
 }
 /*# sourceMappingURL=EstIniAdm.css.map */

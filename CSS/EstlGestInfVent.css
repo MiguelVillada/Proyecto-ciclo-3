@@ -42,7 +42,6 @@ body {
   display: grid;
   -ms-grid-columns: 2fr 7fr;
       grid-template-columns: 2fr 7fr;
-  padding-bottom: 0%;
 }
 
 .Menu .Izquierdo {

@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/EstInfoVentas.css">
-    <title>Información de Ventas</title>
+    <link rel="stylesheet" href="CSS/Estilos.css">
+    <title>Lista de usuarios</title>
+
+    <!------------------------------------------------------------------------>
+    <style type="text/css">
+      table{
+       background-color: white;
+       text-align: left;
+       border-collapse: collapse;
+       width: 90%;
+     }
+     
+     th, td{
+       padding: 10px;
+     }
+     
+     thead{
+       background-color: #246355;
+       border-bottom: solid 5px #0F362D;
+       color: white;
+     }
+     
+     tr:nth-child(even){
+       background-color: #ddd;
+     }
+     
+     tr:hover td{
+       background-color: #369681;
+       color: white;
+     }
+    
+
+       </style
+    <!------------------------------------------------------------------------>
     <div class="Head">
         <p>Nombre de la empresa</p>
         <div>
@@ -16,7 +48,7 @@
     
 </head>
 <body>
-  <div class="contenedor">
+    <div class="contenedor">
         <div class="Menu">
             <ul>
               <a href="InfoVentas.html" ><li>Información de ventas</li></a>
@@ -27,18 +59,19 @@
             </ul>
         </div>
         <div class="Info">
-            <h3>Información de ventas</h3>
-            <input type="search" name="buscar" id="" placeholder="Ingrese ID, doc identidad o nombre">
-            <input type="submit" value="Buscar">
+            <h3>Lista de usuarios</h3>
+            <input type="search" name="buscar" id="" placeholder="Ingrese código o nombre del usuario">
+            <input type="submit" value="Buscar" class="boton"> 
+            <a href="GestionUsuarios.html"><input type="button" value="Registrar usuario" ></a>
             
-            <p>
+            <div class="tabla">
 
-              <table class="tabla" border=1>
+              <br><table width=400 border=1 align=left>
                 <thead>
                   <tr>
-                    <th>Identificador</th>
-                    <th>Descripción</th>
-                    <th>Valor unitario</th>
+                    <th>Identificación</th>
+                    
+                    <th>Nombre</th>
                     <th>Estado</th>
                   </tr>
                 </thead>
@@ -46,36 +79,39 @@
                     <td><a href="">1234</a> </td>
                     <td></td>
                     <td></td>
-                    <td></td>
+                    
                   </tr>
                   <tr>
                     <td><a href="">2345</a></td>
                     <td></td>
                     <td></td>
-                    <td></td>
+                    
                   </tr>
                   <tr>
                     <td><a href="">3456</a></td>
                     <td></td>
                     <td></td>
-                    <td></td>
+                    
                   </tr>
                   <tr>
-                    <td><a href="">3456</a></td>
+                    <td><a href="">4567</a></td>
                     <td></td>
                     <td></td>
-                    <td></td>
+                    
                   </tr>
                   <tr>
-                    <td><a href="">3456</a></td>
+                    <td><a href="">1456</a></td>
                     <td></td>
                     <td></td>
-                    <td></td>
+                   
                   </tr>
                   </table> 
+            </div>
 
 
         </div>
-  </div>
+    </div>
+
+
 </body>
 </html>
