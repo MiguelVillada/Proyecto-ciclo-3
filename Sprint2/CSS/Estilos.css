@@ -96,11 +96,25 @@ body {
 }
 
 .Info input[type="submit"] {
-  background-color: #ff944d;
+  background-color: #246355;
   width: 100px;
   padding: 8px;
   border-radius: 10px;
   cursor: pointer;
+  color: aliceblue;
+  
+}
+
+.Info input[type="button"] {
+  background-color: #246355;
+  width: 160px;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: aliceblue;
+  margin-top: 2%;
+  margin-left: 32%;
+  
 }
 
 .Info input[type="submit"]:hover {
