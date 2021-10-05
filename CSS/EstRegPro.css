@@ -1,0 +1,157 @@
+.Head {
+  background: #2b78e4;
+  padding-left: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7fr  1fr;
+      grid-template-columns: 7fr  1fr;
+  border-bottom-style: solid;
+  border-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.Head div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.Head div img {
+  padding-top: 10px;
+}
+
+.Head div:hover {
+  background: #005ce6;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #9fc5f8;
+}
+
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.Menu {
+  margin: 0px;
+  margin-top: 0px;
+  padding-left: 0px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  background-color: #7cb2f8;
+}
+
+.Menu .izquierdo {
+  padding-left: 0px;
+  padding-top: 0px;
+  list-style: none;
+  margin-top: 0px;
+  background: #7cb2f8;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  grid-row: 1/7;
+}
+
+.Menu .izquierdo a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Menu .izquierdo li {
+  margin: 0px;
+  padding: 15px;
+  background: #ff944d;
+  border-right: 5px;
+  border-style: outset;
+  border-color: #383434;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Menu .izquierdo li:hover {
+  background: #ffd1b3;
+}
+
+.Registro {
+  list-style: none;
+  background-color: whitesmoke;
+  margin: 3%;
+  border-radius: 8px;
+}
+
+.Registro li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 3fr;
+      grid-template-columns: 3fr 3fr;
+  margin: 2%;
+}
+
+.Registro li label {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.Registro li label input {
+  border-radius: 8px;
+}
+
+.Registro li label #producto {
+  margin-bottom: 15%;
+  background-color: #dddddd;
+}
+
+.Registro li label #valor {
+  padding-top: 1.7%;
+  padding-bottom: 1.7%;
+}
+
+.Registro li .botones {
+  display: block;
+}
+
+.Registro li .botones label {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 7fr;
+      grid-template-columns: 1fr 7fr;
+}
+
+.Registro li button {
+  background-color: #38761d;
+  color: white;
+  margin: 12%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 8px;
+}
+
+.Registro li button:hover {
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+
+.Registro li textarea {
+  border-radius: 8px;
+  margin-right: 5%;
+  margin-left: 4%;
+}
+/*# sourceMappingURL=EstRegPro.css.map */
