@@ -1,14 +1,17 @@
 const express=require('express');
 //const {dbConnection}=require('./database/config');
 require('dotenv').config();
+const {dbConnection}=require('./database/config');
 
 
 const app=express();
-//dbConnection();
+
+//Levanta la conexion
+dbConnection();
 
 
 app.use(express.static('public'));
-app.use(express.json()); 
+app.use(express.json());
 
 //Rutas
 app.use('/api/usuarios', require('./routes/usuarios'));
