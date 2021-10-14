@@ -1,0 +1,29 @@
+.Head {
+    background: #2b78e4;
+    padding-left: 10px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 7fr  1fr;
+        grid-template-columns: 7fr  1fr;
+    border-bottom-style: solid;
+    border-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  
+  .Head div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  .Head div img {
+    padding-top: 10px;
+  }
+  
+  .Head div:hover {
+    background: #005ce6;
+  }

@@ -1,0 +1,56 @@
+.Formato .Derecho {
+    list-style: none;
+    padding-left: 2%;
+    background: whitesmoke;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 8px;
+  }
+  
+  .Formato .Derecho li {
+    padding: 2%;
+    padding-left: 10%;
+    padding-right: 20%;
+    padding-bottom: 3%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  
+  .Formato .Derecho li label {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding-left: 35%;
+    font-size: large;
+  }
+  
+  .Formato .Derecho li input {
+    border-radius: 8px;
+    font-size: medium;
+    padding: 2%;
+  }
+  
+  .Formato .Derecho li select {
+    border-radius: 8px;
+    padding: 2%;
+    font-size: medium;
+  }
+  
+  .Formato .Derecho button {
+    background: #106823;
+    color: white;
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 8px;
+    margin: 3%;
+    margin-left: 38%;
+  }
+  
+  .Formato .Derecho button:hover {
+    cursor: pointer;
+    background: yellowgreen;
+  }
