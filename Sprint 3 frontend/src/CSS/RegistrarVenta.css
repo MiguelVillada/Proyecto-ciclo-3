@@ -1,0 +1,52 @@
+.Derecho {
+    list-style: none;
+    background: whitesmoke;
+    margin: 3%;
+    padding-top: 1%;
+    border-radius: 8px;
+  }
+  
+  .Derecho li {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 3fr;
+        grid-template-columns: 3fr 3fr;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .Derecho li label {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin: 15px;
+  }
+  
+  .Derecho li label input {
+    margin-right: 20%;
+    border-radius: 5px;
+    margin-top: 0px;
+    padding: 2%;
+    border-style: groove;
+  }
+  
+  .Derecho li label #Venta, .Derecho li label #Valor, .Derecho li label #Precio {
+    background: #cccccc;
+  }
+  
+  .Derecho li button {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    background: #38761d;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 100%;
+  }
+  
+  .Derecho li button:hover {
+    background: #6aa84f;
+  }

@@ -1,0 +1,71 @@
+.Registro {
+  list-style: none;
+  background-color: whitesmoke;
+  margin: 3%;
+  border-radius: 8px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.Registro li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 3fr;
+  grid-template-columns: 3fr 3fr;
+  margin: 2%;
+}
+
+.Registro li label {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.Registro li label input {
+  border-radius: 8px;
+}
+
+.Registro li label #producto {
+  margin-bottom: 15%;
+  background-color: #dddddd;
+}
+
+.Registro li label #valor {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.Registro li .botones {
+  display: block;
+}
+
+.Registro li .botones label {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 7fr;
+  grid-template-columns: 1fr 7fr;
+}
+
+.Registro li button {
+  background-color: #38761d;
+  color: white;
+  margin-bottom: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 8px;
+}
+
+.Registro li button:hover {
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+
+.Registro li textarea {
+  border-radius: 8px;
+  margin-right: 5%;
+  margin-left: 4%;
+}
