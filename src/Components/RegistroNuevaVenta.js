@@ -7,12 +7,11 @@ const onChangeCantidad = () =>{
     let pre = document.getElementById("Precio").value;
     document.getElementById("Valor").value=(can*pre);
 }
-const registrar = async (iden) => {
+const registrar = async () => {
     
     const objeto={
         Fecha: document.getElementById("Fecha").value,
-        Id_Venta:iden,
-        Identificador: document.getElementById("Id_Producto").value,
+        Id_Producto: document.getElementById("Id_Producto").value,
         Cliente:document.getElementById("Cliente").value,
         Precio_unitario :document.getElementById("Precio").value,
         Id_Cliente:document.getElementById("Documento").value,
@@ -21,14 +20,14 @@ const registrar = async (iden) => {
         Cantidad:document.getElementById("Cantidad").value
     }
     try{
-        await axios.put('http://localhost:4000/api/ventas/' + iden,objeto);
-        alert("Venta actualizada");
+    const res = await axios.post('http://localhost:4000/api/ventas/crear',objeto);
+    alert("Venta registrada");
     }catch(error){
-        alert("Error al actualizar");
+        alert("Error al registrar venta");
     }
+        
 }
-
-function RegistroVenta(props) {
+function RegistroNuevaVenta(props) {
     return (
         <div>
             <ul className="Derecho">
@@ -57,7 +56,6 @@ function RegistroVenta(props) {
                     <label for="Precio">Precio: $
                         <input type="number" id="Precio"
                             name="Precio"
-                            readOnly
                             defaultValue={props.Precio_unitario} />
                     </label>
 
@@ -84,12 +82,13 @@ function RegistroVenta(props) {
                         <input type="number" id="Valor" name="Valor Total" readOnly
                             defaultValue={props.Precio_unitario * props.Cantidad} />
                     </label>
-                    <button onClick={() => registrar(props._id)}>Actualizar venta</button>
+                    <button onClick={() => registrar(props._id)}>Registrar venta</button>
                 </li>
+                {console.log(props)}
             </ul>
         </div>
     )
 }
 
 
-export default RegistroVenta;
+export default RegistroNuevaVenta;

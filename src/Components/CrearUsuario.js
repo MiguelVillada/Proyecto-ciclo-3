@@ -1,13 +1,34 @@
+import axios from 'axios';
 import React from 'react';
 import "../CSS/CrearUsuario.css";
 
-// const ObtenerDatos = () =>{
-//     let nombr=document.getElementById("Nombre").value;
-//     let identi=document.getElementById("Identificacion").value;
-//     let identi=document.getElementById("Nombre").value;
-//     let identi=document.getElementById("Nombre").value;
-    
-// }
+const registrar = async () => {
+    let rol = "";
+    let est = "";
+    for (let i = 0; i < document.getElementsByName('Roles').length; i++) {
+        if (document.getElementsByName('Roles')[i].selected) {
+            rol = document.getElementsByName('Roles')[i].value;
+        }
+    }
+    for (let i = 0; i < document.getElementsByName('Estados').length; i++) {
+        if (document.getElementsByName('Estados')[i].selected) {
+            est = document.getElementsByName('Estados')[i].value;
+        }
+    }
+    const user = {
+        Nombre: document.getElementById('Nombre').value,
+        Identificacion: document.getElementById('Identificacion').value,
+        Rol: rol,
+        Estado: est
+    }
+    console.log(user);
+    try {
+        await axios.post('http://localhost:4000/api/usuarios/crear', user);
+        alert("Registro exitoso");
+    } catch (error) {
+        alert("Error al registrar usuario");
+    }
+}
 function CrearUsuario() {
     return (
         <div className="Formato">
@@ -23,23 +44,23 @@ function CrearUsuario() {
                 </li>
                 <li>
                     <label for="Estado"> Rol:</label>
-                    <select name="select">
-                        <option value="Vendedor" selected>Vendedor</option>
-                        <option value="Administrador" >Administrador</option>
-                        <option value="En espera">En espera</option>
+                    <select >
+                        <option name="Roles" defaultValue="Vendedor" selected >Vendedor</option>
+                        <option name="Roles" defaultValue="Administrador" >Administrador</option>
+                        <option name="Roles" defaultValue="En espera">En espera</option>
                     </select>
 
                 </li>
                 <li>
                     <label for="Estado">Estado:</label>
-                    <select name="select">
-                        <option value="Pendiente" selected>Pendiente</option>
-                        <option value="Autorizado" >Autorizado</option>
-                        <option value="No autorizado">No utorizado</option>
+                    <select >
+                        <option name="Estados" defaultValue="Pendiente" selected >Pendiente</option>
+                        <option name="Estados" defaultValue="Autorizado" >Autorizado</option>
+                        <option name="Estados" defaultValue="No autorizado">No autorizado</option>
                     </select>
 
                 </li>
-                <button>Guardar</button>
+                <button onClick={registrar}>Guardar</button>
             </ul>
         </div>
     );

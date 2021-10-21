@@ -6,34 +6,37 @@ import InfoVentas from './InfoVentas';
 import Productos from './Productos';
 import CrearProducto from "./CrearProducto";
 import RegistroVenta from './RegistroVenta';
+import { Link } from 'react-router-dom';
+import RegistroNuevaVenta from './RegistroNuevaVenta';
 
 const ListarVentas = () => {
     ReactDOM.render(
-        <InfoVentas />,
+        <InfoVentas />
+        ,
         document.getElementById('Espacio')
     );
 }
-const RegistrarProducto =() =>{
+const RegistrarProducto = () => {
     ReactDOM.render(
         <CrearProducto />,
         document.getElementById('Espacio')
     );
 }
-const ListarProducto = () =>{
+const ListarProducto = () => {
     ReactDOM.render(
         <Productos />,
         document.getElementById('Espacio')
     );
 }
-const ListarUsuarios = () =>{
+const ListarUsuarios = () => {
     ReactDOM.render(
         <Usuarios />,
         document.getElementById('Espacio')
     );
 }
-const CrearVenta = () =>{
+const CrearVenta = () => {
     ReactDOM.render(
-        <RegistroVenta />,
+        <RegistroNuevaVenta />,
         document.getElementById('Espacio')
     );
 }
@@ -43,12 +46,21 @@ function Menu() {
         <div className="contenedor">
             <div className="Menu">
                 <ul className="Izquierdo">
-                    <a><li onClick={ListarVentas}>Información de ventas</li></a>
-                    <a onClick={CrearVenta}><li>Registrar venta</li></a>
-                    <a onClick={RegistrarProducto} ><li>Registrar un producto</li></a>
-                    <a onClick={ListarProducto} ><li>Listar producto</li></a>
-                    <a onClick={ListarUsuarios} ><li>Ver usuarios</li></a>
-
+                    <Link to="/ventas/listar">
+                        <li onClick={ListarVentas}>Información de ventas</li>
+                    </Link>
+                    <Link to="/ventas/crear">
+                        <li  onClick={CrearVenta}>Registrar venta</li>
+                    </Link>
+                    <Link to="/productos/registrar">
+                        <li onClick={RegistrarProducto}>Registrar un producto</li>
+                    </Link>
+                    <Link to="/productos/listar">
+                        <li onClick={ListarProducto}>Listar producto</li>
+                    </Link>
+                    <Link to="/usuarios/listar">
+                        <li  onClick={ListarUsuarios}>Ver usuarios</li>
+                    </Link>
 
                 </ul>
 
