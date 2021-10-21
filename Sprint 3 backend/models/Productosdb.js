@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 const ProductoSchema=Schema({
     Identificador:{
-        type: String,
+        type: Number,
         require:true,
         unique:true  
     },
