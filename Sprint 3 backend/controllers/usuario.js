@@ -1,7 +1,17 @@
 const {response}=require('express');
 const {validationResult}=require('express-validator');
-const { updateMany } = require('../models/Usuariosdb');
+const Usuariosdb = require('../models/Usuariosdb');
+//const { updateMany } = require('../models/Usuariosdb');
+const mongoose=require('mongoose')
 const Usuario=require('../models/Usuariosdb')
+/********************************************* */
+const parseId=(Id)=>{
+    return mongoose.Types.ObjectId(Id)
+}
+
+/******************************************* */
+
+
 
 const getUsuarios=async(req, resp=response)=>{
     const usuario=await Usuario.find()
@@ -42,18 +52,38 @@ const setUsuario=async (req, resp=response)=>{
 
 //******************************************************************** */
 const actualizarUsuario=async(req, resp=response)=>{
-    const actualizaru=await Usuario.findOneAndUpdate(req.params.Identificacion, {
-        Nombre: req.body.Nombre,
-        Rol:  req.body.Rol,
-        Estado:  req.body.Estado
-    }, {useFindAndModify: true, new: true})
-        if(actualizaru){
-            resp.json({Mensaje: 'Usuario actualizado'})
+
+    const usuarioId = req.params.id;
+
+    try {
+        
+        const usuario = await Usuario.findById(usuarioId);
+
+        if(!usuario) {
+            resp.status(404).json({
+                ok: false,
+                msg: 'El id del usuario no coincide con ningun elemento en la base de datos',
+            });
         }
-        else{
-            resp.json({Mensaje: 'Usuario  no actualizado'}) 
-        }
-//Usuario.find
+
+        const usuarioActualizado = await Usuario.findByIdAndUpdate(usuarioId, req.body, { new: true });
+
+        resp.json({
+            ok: true,
+            msg: 'Usuario actualizado de manera exitosa',
+            usuario: usuarioActualizado
+        });
+
+
+    } catch (error) {
+        console.log(error);
+        resp.status(500).json({
+            ok: false,
+            msg: 'error al crear el usuario',
+        });
+    }
+
+
 }
 
  
@@ -63,10 +93,34 @@ const actualizarUsuario=async(req, resp=response)=>{
 
 //******************************************************************** */
 const eliminarUsuario=async(req, resp=response)=>{
-    const encontrar=await Usuario.findOneAndDelete(req.params.Identificacion)
-    if(encontrar){
-        Usuario.remove()
-        resp.json({Mensaje: 'Usuario borrado'})
+    
+    const usuarioId = req.params.id;
+
+    try {
+        
+        const usuario = await Usuario.findById(usuarioId);
+
+        if(!usuario) {
+            resp.status(404).json({
+                ok: false,
+                msg: 'El id del usuario no coincide con ningun elemento en la base de datos',
+            });
+        }
+
+        await Usuario.findByIdAndDelete(usuarioId);
+
+        resp.json({
+            ok: true,
+            msg: 'Usuario eliminado de manera exitosa'
+        });
+
+
+    } catch (error) {
+        console.log(error);
+        resp.status(500).json({
+            ok: false,
+            msg: 'error al crear el usuario',
+        });
     }
  
 }
